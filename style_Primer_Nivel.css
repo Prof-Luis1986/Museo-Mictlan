@@ -1,0 +1,73 @@
+body {
+    background-image: url('/wall1.jpeg');
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.Titulo {
+    background-color: #393838;
+    width: 80%;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 50px;
+    color: #f0e9e9;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.Primer_Nivel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 620px; 
+    margin-top: 20px; 
+}
+
+.barra_lateral {
+    position: fixed;
+    left: -250px; /* Oculta la barra lateral */
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.8); /* Hacemos la barra lateral semi-transparente */
+    transition: left 0.3s ease; /* Transición suave al mostrar/ocultar la barra lateral */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra_lateral button {
+    width: calc(100% - 20px); /* Utiliza todo el ancho disponible menos el espacio del padding */
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 20px; /* Aumentamos la separación entre los botones */
+    padding-left: 10px; /* Añade un pequeño espacio a la izquierda */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.barra_lateral button.btnHome {
+    background-image: url('/Home.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center left; /* Alinea la imagen a la izquierda */
+}
+
+.barra_lateral button.btnSiguiente {
+    background-image: url('/Flecha_Dere.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center left; /* Alinea la imagen a la izquierda */
+}
+
+.barra_lateral button:hover {
+    background-color: #ddd; /* Cambia el color de fondo al pasar el mouse */
+}
